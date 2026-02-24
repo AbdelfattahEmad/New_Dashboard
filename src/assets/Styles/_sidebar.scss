@@ -1,0 +1,42 @@
+.sidebar {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+
+  .Logo {
+    margin-bottom: 25px;
+    padding: 25px;
+  }
+
+  .Sidebar_list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+
+    .sidebar_list_item {
+      display: flex;
+      .sidebar_list_item_NavLink {
+        width: 100%;
+        text-decoration: none;
+        color: #ccc;
+        padding: 12px;
+        transition: 0.3s;
+        font-size: 15px;
+
+        &:hover {
+          background-color: #ffffff;
+          color: #122438;
+          cursor: pointer;
+        }
+
+        &.active {
+          background-color: #ffffff;
+          color: #122438;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
