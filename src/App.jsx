@@ -12,11 +12,13 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+        {/* Authuntecation Routes  */}
+
         <Route element={<AuthLayout />}>
           <Route path="login" element={<Login />} />
-          <Route path="register" element={<Register />} />
+          <Route path="/register" element={<Register />} />
         </Route>
-
+        {/* Dashboard Routes */}
         <Route path="/" element={<DashboardLayout />}>
           <Route index element={<DasboardHome />} />
           <Route path="about" element={<About />} />
