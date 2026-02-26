@@ -6,7 +6,7 @@ import NotFound from "./Pages/NotFound";
 import DasboardHome from "./Pages/Dashboard/DasboardHome";
 import Login from "./Auth/Login";
 import AuthLayout from "./Auth/AuthLayout";
-import Register from "./Auth/register";
+import Register from "./Auth/Register";
 
 function App() {
   return (
