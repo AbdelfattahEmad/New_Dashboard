@@ -13,9 +13,9 @@ function Navbar({ toggleSidebar }) {
       </div>
 
       <div className="right">
-        <div className="search-box">
+        {/* <div className="search-box">
           <input type="text" placeholder="Search..." />
-        </div>
+        </div> */}
 
         <div className="icons">
           <span className="notification">🔔</span>

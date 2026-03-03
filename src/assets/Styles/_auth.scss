@@ -60,6 +60,9 @@
   text-align: center;
   color: #fff;
   animation: fadeIn 0.8s ease;
+  @media (max-width: 420px) {
+    width: 330px;
+  }
 
   h2 {
     margin-bottom: 10px;
@@ -208,6 +211,9 @@
   text-align: center;
   color: #fff;
   animation: fadeIn 0.8s ease;
+  @media (max-width: 420px) {
+    width: 330px;
+  }
 
   h2 {
     margin-bottom: 10px;
