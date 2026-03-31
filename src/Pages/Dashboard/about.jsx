@@ -1,9 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import Table from "../../Components/Tabel";
+import Modal from "../../Components/Ui/Modal/Modal";
+
 
 const About = () => {
+    const [open, setOpen] = useState(false);
+
   return (
-    <div>
+    <>
+      <div className="AddproductModal">
+        <h2>Add product  </h2>
+      <button className="modal_open_button" onClick={() => setOpen(true)}>Open Modal</button>
+        <Modal
+        isOpen={open}
+        onClose={() => setOpen(false)}
+        title="Add Product"
+       >
+             </Modal>
+
+
+        
+      </div>
+      
       <Table>
         <thead>
           <tr>
@@ -33,7 +51,7 @@ const About = () => {
           </tr>
         </tbody>
       </Table>
-    </div>
+    </>
   );
 };
 

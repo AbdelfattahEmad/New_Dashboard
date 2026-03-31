@@ -7,9 +7,13 @@ import DasboardHome from "./Pages/Dashboard/DasboardHome";
 import Login from "./Auth/Login";
 import AuthLayout from "./Auth/AuthLayout";
 import Register from "./Auth/Register";
+import GlobalLoader from "./Components/Loader/GlobalLoader";
 
 function App() {
   return (
+    <>
+    <GlobalLoader />
+    
     <BrowserRouter>
       <Routes>
         {/* Authuntecation Routes  */}
@@ -26,6 +30,9 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
+    
+    </>
+
   );
 }
 

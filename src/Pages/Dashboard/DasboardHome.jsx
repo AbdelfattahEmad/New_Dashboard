@@ -9,7 +9,6 @@ const DasboardHome = () => {
   });
 
   if (isLoading) return <p>Loading...</p>;
-
   if (error) return <p>Error...</p>;
 
   return (
@@ -21,15 +20,16 @@ const DasboardHome = () => {
         justifyContent: "center"
       }}
     >
-      {data.map(product =>
-        <ProductCard
-          key={product.id}
-          title={product.title}
-          description="Powerful laptop for developers"
-          price="1200"
-          image="https://images.unsplash.com/photo-1517336714731-489689fd1ca8"
-        />
-      )}
+      {data &&
+        data.map(product =>
+          <ProductCard
+            key={product.id}
+            title={product.title}
+            description="Powerful laptop for developers"
+            price="1200"
+            image="https://images.unsplash.com/photo-1517336714731-489689fd1ca8"
+          />
+        )}
     </div>
   );
 };
