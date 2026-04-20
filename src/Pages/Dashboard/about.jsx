@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Table from "../../Components/Tabel";
 import Modal from "../../Components/Ui/Modal/Modal";
+import CreateProduct from "../../Components/UiProducts/CreateProduct";
 
 
 const About = () => {
@@ -16,7 +17,10 @@ const About = () => {
         onClose={() => setOpen(false)}
         title="Add Product"
        >
-             </Modal>
+
+        <CreateProduct  />
+
+      </Modal>
 
 
         

@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import ProductCard from "../../Components/Ui/ProductCard";
+import ProductCard from "../../Components/UiProducts/ProductCard";
 import { useProduct } from "../../hooks/getProuduct";
 
 const DasboardHome = () => {

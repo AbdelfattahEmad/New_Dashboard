@@ -1,4 +1,3 @@
-import React from "react";
 import "../../../assets/Styles/_input_buttons.scss";
 
 export default function InputField({
@@ -9,7 +8,7 @@ export default function InputField({
   onChange
 }) {
   return (
-    <div className="input_group">
+    <div className="input_group" style={{ marginBottom: "0px" }}>
       {icon &&
         <span className="icon">
           {icon}

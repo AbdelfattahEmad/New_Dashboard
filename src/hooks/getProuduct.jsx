@@ -7,3 +7,10 @@ export const useProduct = () => {
     queryFn: getProducts
   });
 };
+
+export const UseCreateProducts = () => {
+  return useQuery({
+    queryKey: ["CreateProducts"],
+    queryFn: createProduct
+  });
+};

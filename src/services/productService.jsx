@@ -8,6 +8,6 @@ export const getProducts = async () => {
 
 // create product
 export const CreateProducts = async () => {
-  const response = await api.post("//products?page=1&limit=10&keyword=laptop");
+  const response = await api.post("/products", data);
   return response.data;
 };
