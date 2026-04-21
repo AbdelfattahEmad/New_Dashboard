@@ -15,19 +15,20 @@
   background: #fff;
   border-radius: 12px;
   width: 90%;
-  //   height: 90%;
   max-width: 90%;
-  padding: 20px;
   animation: fadeIn 0.3s ease;
 
   .modal-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 15px;
+    background-color: #122438;
+    padding: 12px;
+    border-bottom: 1px solid #ccc;
 
     h2 {
       font-size: 20px;
+      color: #fff;
     }
 
     .close-btn {
@@ -35,6 +36,8 @@
       border: none;
       font-size: 18px;
       cursor: pointer;
+      padding: 3px;
+      color: #eee;
     }
   }
 

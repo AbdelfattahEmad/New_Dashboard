@@ -1,6 +1,8 @@
 import { useQuery } from "@tanstack/react-query";
-import { getProducts } from "../services/productService";
+import { CreateProducts, getProducts } from "../services/productService";
+import { useMutation } from "@tanstack/react-query";
 
+// get all products
 export const useProduct = () => {
   return useQuery({
     queryKey: ["products"],
@@ -8,9 +10,9 @@ export const useProduct = () => {
   });
 };
 
-export const UseCreateProducts = () => {
-  return useQuery({
-    queryKey: ["CreateProducts"],
-    queryFn: createProduct
+// create product
+export const useCreateProduct = () => {
+  return useMutation({
+    mutationFn: CreateProducts
   });
 };

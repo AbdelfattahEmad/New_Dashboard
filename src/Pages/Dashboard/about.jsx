@@ -10,16 +10,14 @@ const About = () => {
   return (
     <>
       <div className="AddproductModal">
-        <h2>Add product  </h2>
-      <button className="modal_open_button" onClick={() => setOpen(true)}>Open Modal</button>
+          <h2> Add Products</h2>
+      <button className="modal_open_button" onClick={() => setOpen(true)}>Add Product</button>
         <Modal
         isOpen={open}
         onClose={() => setOpen(false)}
-        title="Add Product"
+        title="Create Product"
        >
-
         <CreateProduct  />
-
       </Modal>
 
 
